@@ -1,0 +1,13 @@
+.list-container {
+  text-align: center;
+}
+
+.list {
+  padding-top: 0px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

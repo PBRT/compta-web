@@ -1,6 +1,22 @@
 import * as moment from "moment";
 import { Injectable } from "@angular/core";
 
+export interface IEvent {
+  name: string;
+  date: Date;
+}
+
+export interface IEventUnit {
+  name: string;
+  getTimeTo: (Date) => Date;
+}
+
+export interface IUnit {
+  name: string;
+  unit: moment.unitOfTime.DurationConstructor;
+  events: IEventUnit[];
+}
+
 function getEventDate(dob, params) {
   const date = new Date(dob);
   const diff = 0;
@@ -22,7 +38,7 @@ function getEventDate(dob, params) {
   return date;
 }
 
-const units = [
+const units: IUnit[] = [
   {
     name: "Years",
     unit: "years",
@@ -90,12 +106,7 @@ const units = [
 })
 export class EventsService {
   constructor() {}
-  getUnits() {
+  getUnits(): IUnit[] {
     return units;
   }
-}
-
-export interface IEvent {
-  name: string;
-  date: Date;
 }

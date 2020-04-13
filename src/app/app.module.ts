@@ -13,6 +13,7 @@ import { DialogComponent } from "./components/dialog/dialog.component";
 // Containers
 import { DobComponent } from "./containers/dob/dob.component";
 import { DashboardComponent } from "./containers/dashboard/dashboard.component";
+import { MeComponent } from "./containers/me/me.component";
 
 // UI
 import { MatMenuModule } from "@angular/material/menu";
@@ -36,7 +37,8 @@ import { MatDialogModule } from "@angular/material/dialog";
     DobComponent,
     DashboardComponent,
     EventsListComponent,
-    DialogComponent
+    DialogComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,
