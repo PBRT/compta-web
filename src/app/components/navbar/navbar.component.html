@@ -3,6 +3,9 @@
     <div class="headline-container">
       <a mat-button routerLink="/" class="headline-item">COMPTA</a>
     </div>
-    <a mat-button routerLink="/dob" class="item">Set D.O.B.</a>
+    <div *ngIf="!profileService.isEmpty()" class="headline-user">
+      {{profileService.getName()}}, born the {{profileService.getDob().toDateString()}}
+    </div>
+    <a mat-raised-button routerLink="/dob">Edit profile</a>
   </mat-toolbar-row>
 </mat-toolbar>

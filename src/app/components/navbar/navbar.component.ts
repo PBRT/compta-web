@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ProfileService } from "../../services/profile/profile.service";
 
 @Component({
   selector: "app-navbar",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
-  constructor() {}
+  constructor(public profileService: ProfileService) {}
 
   ngOnInit(): void {}
 }
