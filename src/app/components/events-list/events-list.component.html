@@ -1,0 +1,20 @@
+<div class="list-container">
+  <mat-nav-list class="list">
+    <mat-list-item *ngFor="let event of getEvents()">
+      <div class="list-item">
+        <div>{{ event.name }}</div>
+        <div>{{ event.formattedDate }}</div>
+      </div>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-nav-list>
+  <button
+    mat-stroked-button
+    color="primary"
+    class="load-more"
+    (click)="loadMore()"
+    *ngIf="offset < events.length"
+  >
+    Load More
+  </button>
+</div>

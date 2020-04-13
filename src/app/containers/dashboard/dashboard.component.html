@@ -1,6 +1,9 @@
 <mat-tab-group mat-stretch-tabs>
-  <mat-tab label="Upcoming">Upcoming</mat-tab>
-  <mat-tab label="Past">Past</mat-tab>
+  <mat-tab label="Upcoming">
+    <app-events-list [events]="getEvents().upcomingEvents"></app-events-list>
+  </mat-tab>
+  <mat-tab label="Past">
+    <app-events-list [events]="getEvents().pastEvents"></app-events-list>
+  </mat-tab>
   <mat-tab label="Me">Me</mat-tab>
 </mat-tab-group>
-<div>My APP 1</div>

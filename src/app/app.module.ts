@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // Components
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { EventsListComponent } from "./components/events-list/events-list.component";
+
+// Containers
 import { DobComponent } from "./containers/dob/dob.component";
 import { DashboardComponent } from "./containers/dashboard/dashboard.component";
 
@@ -21,13 +24,16 @@ import { MatNativeDateModule } from "@angular/material/core";
 import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DobComponent,
-    DashboardComponent
+    DashboardComponent,
+    EventsListComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,9 @@ import { MatIconModule } from "@angular/material/icon";
     MatButtonModule,
     MatToolbarModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

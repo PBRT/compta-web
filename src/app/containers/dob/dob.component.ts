@@ -63,7 +63,6 @@ export class DobComponent implements OnInit {
   onSubmit() {
     const newName = this.dateForm.value.name;
     const newDate = this.buildDate(this.dateForm.value);
-    console.log(this.dateForm);
     this.profileService.setDob(newDate);
     this.profileService.setName(newName);
     this.router.navigate(["/dashboard"]);
