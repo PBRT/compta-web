@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // Components
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { EventsListComponent } from "./components/events-list/events-list.component";
+import { DialogComponent } from "./components/dialog/dialog.component";
 
 // Containers
 import { DobComponent } from "./containers/dob/dob.component";
@@ -26,6 +27,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { MatDividerModule } from "@angular/material/divider";
     NavbarComponent,
     DobComponent,
     DashboardComponent,
-    EventsListComponent
+    EventsListComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { MatDividerModule } from "@angular/material/divider";
     MatTabsModule,
     MatIconModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

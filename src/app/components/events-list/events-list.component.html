@@ -1,7 +1,7 @@
 <div class="list-container">
   <mat-nav-list class="list">
     <mat-list-item *ngFor="let event of getEvents()">
-      <div class="list-item">
+      <div class="list-item" (click)="onEventClick(event)">
         <div>{{ event.name }}</div>
         <div>{{ event.formattedDate }}</div>
       </div>
