@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "compta-web",
+      "public": "dist/compta-web",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

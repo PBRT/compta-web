@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "movibot-65": {
+      "hosting": {
+        "compta-web": [
+          "movibot-65"
+        ]
+      }
+    }
+  }
+}
